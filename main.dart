@@ -3,7 +3,7 @@ void main() {
   //함수나 메소드 내부에 지역 변수를 선언할때 적합
   var name = 'minjae';
 
-  //String
+  //String, int ...
   //class 나 property를 선언할때는 타입을 명시
   String name2 = 'tomaot';
 
