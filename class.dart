@@ -97,6 +97,28 @@ class chidRobot extends Robot {
   chidRobot({required this.team, required String name}) : super(name);
 }
 
+// mixins
+//생성자가 없는 클래스
+mixin Strong {
+  final double strengthLevel = 1500.99;
+}
+
+mixin QuickRunner {
+  void runQuick() {
+    print("runnnnnn");
+  }
+}
+
+class Tall {
+  final double height = 1.99;
+}
+
+class Player8 with Strong, QuickRunner {
+  final Team team;
+
+  Player8({required this.team});
+}
+
 void main() {
   var palyer = new Player2("minjae", 1500);
   palyer.hello();
